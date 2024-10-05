@@ -1,0 +1,15 @@
+@mixin title($color: $text-color) {
+  font-size: 30px;
+  font-weight: 700;
+  color: $color;
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 38px;
+  }
+}
+
+@mixin gradient-text($color: $gradient-red-text) {
+  color: transparent;
+  background: $color;
+  background-clip: text;
+}

@@ -1,0 +1,54 @@
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.wrapper {
+  background: $gradient-supersoft;
+}
+
+.container {
+  padding: 0 30px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    max-width: 964px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    max-width: 1380px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    max-width: 1660px;
+  }
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.dotted {
+  width: 6px;
+  height: 6px;
+  border-radius: $radius-rounded;
+  display: none;
+
+  &--white {
+    background: $basic-white;
+  }
+
+  &--grey {
+    background: $text-color;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    display: inline-block;
+  }
+}
