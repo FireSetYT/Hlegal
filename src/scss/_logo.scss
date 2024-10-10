@@ -1,33 +1,149 @@
-
 .logo {
 
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+  }
 
-  &__container {}
-
-
-
-  &__title {}
-
-
-
-  &__cards {}
-
-
+  &__title {
+    text-align: center;
+    color: $main-color;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
 
   &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 375px;
     height: 120px;
   }
 
-
-
-  &__card-hillel {
-    background: #1c4280;
-    display: flex;
-      justify-content: center;
-      align-items: center;
+  &__card:nth-child(1) {
+    background-color: $darkblue;
   }
 
+    &__card:nth-child(2) {
+    background-color: $darkgreen;
+  }
+
+    &__card:nth-child(3) {
+    background-color: $orage;
+  }
+  
+  &__card:nth-child(4) {
+    background-color: $fiolet;
+  }
+
+    &__card:nth-child(5) {
+    background-color: $tiniorage;
+  }
+
+    &__card:nth-child(6) {
+    background-color: $tinigrey;
+  }
+
+      &__card:nth-child(7) {
+    background-color: $red-ic;
+    display: none;
+  }
+
+      &__card:nth-child(8) {
+    background-color: $white-ic;
+    display: none;
+  }
+
+      &__card:nth-child(9) {
+    background-color: $tini;
+    display: none;
+  }
+
+      &__card:nth-child(10) {
+    background-color: $dark-fiolet;
+    display: none;
+  }
+  
+      &__card:nth-child(11) {
+    background-color: $dark-tiniblue;
+    display: none;
+  }
+
+      &__card:nth-child(12) {
+    background-color: $dark;
+    display: none;
+  }
+
+
+  @media screen and (min-width: $breakpoint-md){
+  
+          &__card:nth-child(7) {
+              background-color: $red-ic;
+              display: flex;
+            }
+          
+            &__card:nth-child(8) {
+              background-color: $white-ic;
+              display: flex;
+            }
+          
+            &__card:nth-child(9) {
+              background-color: $tini;
+              display: flex;
+            }
+          
+            &__card:nth-child(10) {
+              background-color: $dark-fiolet;
+              display: flex;
+            }
+          
+            &__card:nth-child(11) {
+              background-color: $dark-tiniblue;
+              display: flex;
+            }
+          
+            &__card:nth-child(12) {
+              background-color: $dark;
+              display: flex;
+            }
+
+            &__card {
+              flex: 1 1 30%;
+            }
+
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    &__cards {
+      padding-left: 100px;
+      padding-right: 100px;
+      
+    }
+
+&__card:nth-child(1) {
+  border-radius: 12px / 12px 0 0 0;
+}
+
+&__card:nth-child(3) {
+  border-radius: 12px / 0 12px 0 0;
+}
+
+&__card:nth-child(10) {
+  border-radius: 12px / 0 0 0 12px;
+}
+
+&__card:nth-child(12) {
+  border-radius: 12px / 0 0 12px 0;
+}
+
+  }
 
   &__img {
   }

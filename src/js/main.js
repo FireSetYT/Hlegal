@@ -1,4 +1,12 @@
+// JS
+import Swiper from 'swiper'
+import { Pagination, Controller } from 'swiper/modules'
+// CSS
+import 'swiper/css'
+import 'swiper/css/pagination'
+
 import '../scss/style.scss'
+
 
 (function () {
 	const isOpen = document.querySelector(".header__box-burger")
@@ -32,3 +40,18 @@ import '../scss/style.scss'
 		})
 	})
 })();
+
+// SWIPER
+const swiper = new Swiper('.swiper', {
+	modules: [Pagination],
+	// Options
+	loop: true,
+	spaceBetween: 30,
+
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+});
