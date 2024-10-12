@@ -1,0 +1,91 @@
+.footer {
+
+  &__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 30px 0 30px 0;
+
+    @media screen and (min-width: $breakpoint-md) {
+      background: transparent;
+        padding: 0;
+        justify-content: flex-start;
+        gap: 6px;
+        margin: 0 0 30px;
+    }
+
+  }
+
+  &__box-adress {
+  }
+
+  &__adress {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__locete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $regular-color;
+  }
+
+  &__box-contact {
+  }
+
+  &__social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 21px;
+
+      svg {
+        width: 38px;
+        height: 38px;
+        fill: $regular-color;
+      }
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $dark;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 10px;
+  }
+
+  &__mail {
+    color: $regular-color;
+    font-weight: 700;
+    font-style: 16px;
+    line-height: 19px;
+    padding: 10px 0 30px 0;
+  }
+
+  &__box-company {}
+
+  &__company {
+    color: $text-color;
+    font-size: 16px;
+  }
+}
+
+  
+
+.container {}
+
+.dotted {}
+
+.dotted--grey {}
