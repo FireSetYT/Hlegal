@@ -1,22 +1,41 @@
 .footer {
 
   &__container {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding: 30px 0 30px 0;
+    padding: 30px;
+    position: relative;
 
-    @media screen and (min-width: $breakpoint-md) {
-      background: transparent;
-        padding: 0;
-        justify-content: flex-start;
-        gap: 6px;
-        margin: 0 0 30px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 30px;
+      right: 30px;
+      height: 4px; 
+      background-color: $separator-color;
     }
+  }
 
+  &__box {
+    text-align: center;
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
   }
 
   &__box-adress {
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (min-width: $breakpoint-md) {
+          flex-direction: row;
+          flex: 1 1 40%;
+          gap: 6px;
+          justify-content: flex-start;
+        }
   }
 
   &__adress {
@@ -25,9 +44,6 @@
   }
 
   &__locete {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 10px;
     font-size: 12px;
     font-weight: 700;
@@ -36,16 +52,34 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $regular-color;
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding: 0;
+      }
+
   }
 
   &__box-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: $breakpoint-md) {
+        flex-direction: row;
+        flex: 1 1 40%;
+        order: 1;
+        gap: 6px;
+        justify-content: flex-start;
+      }
   }
 
   &__social {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       padding-top: 21px;
+
+      @media screen and (min-width: $breakpoint-md) {
+          padding: 0;
+        }
 
       svg {
         width: 38px;
@@ -55,37 +89,41 @@
   }
 
   &__phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: $dark;
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     padding-top: 10px;
+    @media screen and (min-width: $breakpoint-md) {
+        padding: 0;
+      }
   }
 
   &__mail {
     color: $regular-color;
     font-weight: 700;
-    font-style: 16px;
     line-height: 19px;
     padding: 10px 0 30px 0;
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding: 0;
+      }
   }
 
-  &__box-company {}
+  &__box-company {
+
+    @media screen and (min-width: $breakpoint-md) {
+        flex-direction: row;
+        flex: 1 1 40%;
+      }
+  }
 
   &__company {
     color: $text-color;
     font-size: 16px;
+    @media screen and (min-width: $breakpoint-md) {
+      text-align: right;
+    }
   }
 }
-
-  
-
-.container {}
-
-.dotted {}
-
-.dotted--grey {}

@@ -1,0 +1,35 @@
+
+
+.services-area {
+
+  &__container {
+    padding-bottom: 60px;
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: $basic-white;
+  }
+
+  &__dotted {
+    position: relative;
+    top: 27px;
+  }
+
+  &__box-list {
+    @media screen and (min-width: $breakpoint-md) {
+      columns: 2;
+      gap: 60px;
+    }
+  }
+
+  &__list {
+    color: $basic-white;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1.3px;
+    padding: 0 0 0 16px;
+  }
+}

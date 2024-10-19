@@ -1,0 +1,39 @@
+.head-sec {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  &__header {
+    @media screen and (min-width: $breakpoint-md) {
+      padding: 50px 0 0;
+    }
+  }
+
+  &__title {
+    color: $bg-color;
+    text-align: center;
+  }
+
+  &__link {
+    width: 42px;
+    height: 42px;
+    border-radius: $radius-rounded;
+    border: 2px solid $basic-white;
+    position: relative;
+    margin: 0 auto 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 12px;
+      width: 14px;
+      height: 14px;
+      border-bottom: 2px solid $basic-white;
+      border-left: 2px solid $basic-white;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
